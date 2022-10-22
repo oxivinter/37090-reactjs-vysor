@@ -1,7 +1,7 @@
 const CartWidget = () => {
   return (
     <>
-      <h1>Carrito</h1>
+      {/* <h1>Carrito</h1> */}
     </>
   );
 }

@@ -36,6 +36,8 @@ const Navbar = () => {
           </li>
           <li className="nav-carrito">
             <a href="/" ><img src="./svg/iconocarrito.svg" alt="" /></a>
+            <CartWidget />
+            {/* CartWidget va acá */}
           </li>
           <li className="nav-busqueda">
             <FormBusqueda />
