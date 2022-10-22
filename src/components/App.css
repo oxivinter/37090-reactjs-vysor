@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    width: 100vw;
+
+    background-color: rgb(33, 53, 63);
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 300%;
+
+    overflow-x: hidden;
+}
