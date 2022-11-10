@@ -1,9 +1,14 @@
+import "./cartwidget.css";
+import { Link } from "react-router-dom";
+
 const CartWidget = () => {
   return (
     <>
-      {/* <h1>Carrito</h1> */}
+      <Link to="/cart">
+        <img class="invert" src="./svg/iconocarrito.svg" alt="" />
+      </Link>
     </>
   );
-}
+};
 
 export default CartWidget;

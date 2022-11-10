@@ -1,43 +1,40 @@
 import "./navbar.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import FormBusqueda from "../FormBusqueda/FormBusqueda";
 import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
-  //perdon por el hook chicos yo solo quiero mi responsive menu bien bonito
-  const [isActive, setActive] = useState("false");
+  // hook para menu responsive - no es requerimiento de la entrega
+    const [isNavActive, setNavActive] = useState("false");
 
-  const handleToggle = () => {
-    setActive(!isActive);
+  const handleNavToggle = () => {
+    setNavActive(!isNavActive);
   };
 
   return (
     <header>
       <div className="header-container">
-        <a href="/" className="header-brand">
-          VYSOR
-        </a>
-        <div onClick={handleToggle} className="burger">
+        <Link className="header-brand" to="/">VYSOR</Link>
+        <div onClick={handleNavToggle} className="burger">
           <div></div>
           <div></div>
           <div></div>
         </div>
       </div>
       <nav>
-        <ul className={`burger-menu ${isActive ? "burger-menu-active" : ""}`}>
+        <ul className={`burger-menu ${isNavActive ? "burger-menu-active" : ""}`}>
           <li className="nav-texto">
-            <a href="/">Eyeglasses</a>
+            <Link to="/category/1">Eyeglasses</Link>
           </li>
           <li className="nav-texto">
-            <a href="/">Sunglasses</a>
+          <Link to="/category/2">Sunglasses</Link>
           </li>
           <li className="nav-texto">
-            <a href="/">Contacts</a>
+          <Link to="/category/3">Contacts</Link>
           </li>
           <li className="nav-carrito">
-            <a href="/" ><img src="./svg/iconocarrito.svg" alt="" /></a>
             <CartWidget />
-            {/* CartWidget va acá */}
           </li>
           <li className="nav-busqueda">
             <FormBusqueda />

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "idCategoria": 1,
+    "nombre": "Eyeglasses",
+    "marca": "Duar",
+    "modelo": "EG01",
+    "precio": 7690,
+    "stock": 30,
+    "img": "eye-mod1.jpg"
+  },
+  {
+    "id": 2,
+    "idCategoria": 1,
+    "nombre": "Eyeglasses",
+    "marca": "Duar",
+    "modelo": "EG02",
+    "precio": 7690,
+    "stock": 20,
+    "img": "eye-mod2.jpg"
+  },
+  {
+    "id": 3,
+    "idCategoria": 1,
+    "nombre": "Eyeglasses",
+    "marca": "Duar",
+    "modelo": "EG03",
+    "precio": 7690,
+    "stock": 15,
+    "img": "eye-mod3.jpg"
+  },
+  {
+    "id": 4,
+    "idCategoria": 1,
+    "nombre": "Eyeglasses",
+    "marca": "Duar",
+    "modelo": "EG04",
+    "precio": 7690,
+    "stock": 30,
+    "img": "eye-mod4.jpg"
+  },
+  {
+    "id": 5,
+    "idCategoria": 1,
+    "nombre": "Eyeglasses",
+    "marca": "Duar",
+    "modelo": "EG05",
+    "precio": 7690,
+    "stock": 7,
+    "img": "eye-mod5.jpg"
+  },
+  {
+    "id": 6,
+    "idCategoria": 2,
+    "nombre": "Sunglasses",
+    "marca": "Duar",
+    "modelo": "SG01",
+    "precio": 7690,
+    "stock": 20,
+    "img": "sun-mod1.jpg"
+  },
+  {
+    "id": 7,
+    "idCategoria": 2,
+    "nombre": "Sunglasses",
+    "marca": "Duar",
+    "modelo": "SG02",
+    "precio": 7690,
+    "stock": 10,
+    "img": "sun-mod2.jpg"
+  },
+  {
+    "id": 8,
+    "idCategoria": 2,
+    "nombre": "Sunglasses",
+    "marca": "Duar",
+    "modelo": "SG03",
+    "precio": 7690,
+    "stock": 30,
+    "img": "sun-mod3.jpg"
+  },
+  {
+    "id": 9,
+    "idCategoria": 2,
+    "nombre": "Sunglasses",
+    "marca": "Duar",
+    "modelo": "SG04",
+    "precio": 7690,
+    "stock": 21,
+    "img": "sun-mod4.jpg"
+  },
+  {
+    "id": 10,
+    "idCategoria": 2,
+    "nombre": "Sunglasses",
+    "marca": "Duar",
+    "modelo": "SG05",
+    "precio": 7690,
+    "stock": 25,
+    "img": "sun-mod5.jpg"
+  }
+]
