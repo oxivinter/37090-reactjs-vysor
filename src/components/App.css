@@ -20,11 +20,51 @@ body {
     overflow-x: hidden;
 }
 
-.cardProducto {
-  width: 18rem;
-  margin: 4px;
+.router {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px auto;
 }
 
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cardBody {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
+.cardImg {
+  box-sizing: content-box;
+  max-width: 350px;
+  max-height: 350px;
+  padding: 10px;
+}
+
+.cardBtn {
+  font-family: "Barlow", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #333;
+  box-shadow: 0px 5px 5px rgba(80, 80, 80, 0.3);
+  margin: 10px auto;
+  border: none;
+  padding: 0.5em 1.5em;
+}
+
+.cardBtn a {
+  text-decoration-line: none;
+  color: #fff;
+  font-size: 1.2em;
+}
 /* DarkMode */
 
 

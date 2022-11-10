@@ -1,18 +1,32 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ({ producto }) => {
   return (
-    <>
-      <h1>DetalleProducto CARD</h1>
-      <img src={`..img/${producto.img}`} className="img-fluid rounded" alt="" />
-      <h5>{producto.nombre}</h5>
-      <p>Modelo: {producto.modelo}</p>
-      <p>Marca: {producto.marca}</p>
-      <p>Precio: ${producto.precio}</p>
-      <p>Stock: {producto.stock}</p>
-      <button>Agregar al carrito</button>
-    </>
+    <div className="cardContainer">
+      <img src={`/img/${producto.img}`} className="cardImg" alt="..." />
+      <div className="cardBody">
+        <p>
+          <strong>{producto.nombre}</strong>
+        </p>
+        <p>
+          <strong>Marca:</strong> {producto.marca}.
+        </p>
+        <p>
+          <strong>Modelo:</strong> {producto.modelo}.
+        </p>
+        <p>
+          <strong>Precio:</strong> ${producto.precio}.
+        </p>
+        <p>
+          <strong>Stock:</strong> {producto.stock} unidades.
+        </p>
+        <button className="cardBtn">
+        <Link to={`/`}>Agregar al carrito</Link> 
+        {/* Funcionalidad de agregar al carrito aun no implementada, se agrega Link para mantener estilos */}
+        </button>
+      </div>
+    </div>
   );
-}
+};
 
 export default ItemDetail;

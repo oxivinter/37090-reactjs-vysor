@@ -9,15 +9,15 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     consultarBDD("../json/productos.json").then(productos => {
+        console.log(productos);
         const prod = productos.find(productoArray => productoArray.id === parseInt(id));
         setProducto(prod);
       })
-    }, []);
-  consultarBDD();
+    }, [id]);
 
   return (
     <div>
-      <div className="detalleProducto">
+      <div className="router">
         <ItemDetail producto={producto}/>
       </div>
     </div>

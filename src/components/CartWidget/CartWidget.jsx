@@ -5,7 +5,7 @@ const CartWidget = () => {
   return (
     <>
       <Link to="/cart">
-        <img class="invert" src="./svg/iconocarrito.svg" alt="" />
+        <img className="invert" src="./svg/iconocarrito.svg" alt="" />
       </Link>
     </>
   );

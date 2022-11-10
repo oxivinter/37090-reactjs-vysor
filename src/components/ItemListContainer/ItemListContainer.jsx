@@ -23,7 +23,7 @@ const ItemListContainer = () => {
     
   }, [category]);
 
-  return <div>{productos}</div>;
+  return <div className="router">{productos}</div>;
 };
 
 export default ItemListContainer;
