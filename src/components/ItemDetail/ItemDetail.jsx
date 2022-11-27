@@ -1,10 +1,26 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount.jsx";
+import { CartContext } from "../../context/cartContext.js";
+import { LightModeContext } from "../../context/lightMode.js";
 
 const ItemDetail = ({ producto }) => {
+  const { lightMode } = useContext(LightModeContext);
+  const { addItem } = useContext(CartContext);
+
+  const onAdd = (contador) => {
+    console.log(producto);
+    console.log(contador);
+    console.log(addItem);
+    addItem(producto, contador)
+  };
+
+
   return (
-    <div className="cardContainer">
+
+    <div className={lightMode ? "cardContainer-light" : "cardContainer"}>
       <img src={`/img/${producto.img}`} className="cardImg" alt="..." />
-      <div className="cardBody">
+      <div className={lightMode ? "cardBody-light" : "cardBody"}>
         <p>
           <strong>{producto.nombre}</strong>
         </p>
@@ -20,10 +36,8 @@ const ItemDetail = ({ producto }) => {
         <p>
           <strong>Stock:</strong> {producto.stock} unidades.
         </p>
-        <button className="cardBtn">
-        <Link to={`/`}>Agregar al carrito</Link> 
-        {/* Funcionalidad de agregar al carrito aun no implementada, se agrega Link para mantener estilos */}
-        </button>
+        <ItemCount stock={producto.stock} onAdd={onAdd} />
+        <button className={lightMode ? "cardBtn-light" : "cardBtn"}><Link to="/cart">Ir al carrito</Link></button>
       </div>
     </div>
   );

@@ -1,23 +1,35 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import "./ItemCount.css";
+import { LightModeContext } from "../../context/lightMode";
 
-const ItemCount = () => {
+const ItemCount = ({ stock, onAdd }) => {
   const [contador, setContador] = useState(1);
 
-  const modificarContador = (operacion) => {
-    if(operacion === "+") {
-      if(contador < 10) //reemplazar por producto.stock
-        setContador(contador + 1);
-    } else {
-      if(contador > 1)
-        setContador(contador - 1);
-    }
-  }
+  const increaseQty = () => contador < stock && setContador(contador + 1);
+  const decreaseQty = () => contador > 1 && setContador(contador - 1);
+
+  const agregarAlCarrito = () => {
+    console.log("agregar al carrito?")
+    console.log(onAdd);
+    onAdd(contador)
+  };
+
+  const { lightMode } = useContext(LightModeContext);
 
   return (
     <>
-      <button onClick={() => modificarContador()} className="btn">+</button>
-      {contador}
-      <button onClick={() => modificarContador()} className="btn">-</button>
+      <div className="count-container">
+        <button onClick={decreaseQty} className={lightMode ? "cardBtn-light" : "cardBtn"}>
+          -
+        </button>
+        {contador}
+        <button onClick={increaseQty} className={lightMode ? "cardBtn-light" : "cardBtn"}>
+          +
+        </button>
+      </div>
+      <button className={lightMode ? "cardBtn-light" : "cardBtn"} onClick={agregarAlCarrito}>
+        Agregar al carrito
+      </button>
     </>
   );
 };
