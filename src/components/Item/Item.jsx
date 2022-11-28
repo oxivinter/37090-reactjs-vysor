@@ -10,10 +10,10 @@ const {lightMode} = useContext(LightModeContext)
       <img src={`/img/${prod.img}`} className="cardImg" alt="..." />
       <div className={lightMode ? "cardBody-light" : "cardBody"}>
         <p><strong>{prod.nombre}</strong></p>
-        <p><strong>Marca:</strong> {prod.marca}.</p>
-        <p><strong>Modelo:</strong> {prod.modelo}.</p>
-        <p><strong>Precio:</strong> ${prod.precio}.</p>
-        <p><strong>Stock:</strong> {prod.stock} unidades.</p>
+        <p><strong>Marca:</strong> {prod.marca}</p>
+        <p><strong>Modelo:</strong> {prod.modelo}</p>
+        <p><strong>Precio:</strong> ${prod.precio}</p>
+        <p><strong>Stock:</strong> {prod.stock} unidades</p>
         <button className={lightMode ? "cardBtn-light" : "cardBtn"}>
           <Link to={`/item/${prod.id}`}>Ver producto</Link>
         </button>

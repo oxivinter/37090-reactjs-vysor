@@ -1,4 +1,5 @@
 import React from "react";
+import './Checkout.css'
 
 const Checkout = () => {
   const datosFormulario = React.useRef();
@@ -12,39 +13,40 @@ const Checkout = () => {
   }
 
   return (
-    <div className="container">
-      <form onSubmit={consultarFormulario} ref={datosFormulario}>
+    <div className="cardContainer">
+      <form className="cardBody formStructure" onSubmit={consultarFormulario} ref={datosFormulario}>
+      <h1 className="mb-3">Checkout</h1>
         <div className="mb-3">
-          <label htmlFor="nombre" className="form-label">
+          <label htmlFor="nombre" className="checkout-label">
             Nombre y Apellido
           </label>
-          <input type="text" className="form-control" name="nombre" />
+          <input type="text" className="checkout-control" name="nombre" />
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">
+          <label htmlFor="email" className="checkout-label">
             Email
           </label>
-          <input type="email" className="form-control" name="email" />
+          <input type="email" className="checkout-control" name="email" />
         </div>
         <div className="mb-3">
-          <label htmlFor="dni" className="form-label">
+          <label htmlFor="dni" className="checkout-label">
             DNI
           </label>
-          <input type="number" className="form-control" name="dni" />
+          <input type="number" className="checkout-control" name="dni" />
         </div>
         <div className="mb-3">
-          <label htmlFor="celular" className="form-label">
+          <label htmlFor="celular" className="checkout-label">
             Numero telefonico
           </label>
-          <input type="number" className="form-control" name="celular" />
+          <input type="number" className="checkout-control" name="celular" />
         </div>
         <div className="mb-3">
-          <label htmlFor="direccion" className="form-label">
+          <label htmlFor="direccion" className="checkout-label">
             Dirección
           </label>
-          <input type="text" className="form-control" name="direccion" />
+          <input type="text" className="checkout-control" name="direccion" />
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="cardBtn">
           Finalizar Compra
         </button>
       </form>

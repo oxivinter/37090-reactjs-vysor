@@ -9,9 +9,8 @@ const ItemCount = ({ stock, onAdd }) => {
   const decreaseQty = () => contador > 1 && setContador(contador - 1);
 
   const agregarAlCarrito = () => {
-    console.log("agregar al carrito?")
-    console.log(onAdd);
     onAdd(contador)
+    alert("Producto agregado!")
   };
 
   const { lightMode } = useContext(LightModeContext);

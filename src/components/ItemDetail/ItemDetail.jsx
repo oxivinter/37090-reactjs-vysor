@@ -9,9 +9,6 @@ const ItemDetail = ({ producto }) => {
   const { addItem } = useContext(CartContext);
 
   const onAdd = (contador) => {
-    console.log(producto);
-    console.log(contador);
-    console.log(addItem);
     addItem(producto, contador)
   };
 

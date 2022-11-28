@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LightModeProvider } from "../context/lightMode";
 import { CartContextProvider } from "../context/cartContext";
 
+//Components
 import Navbar from "./Navbar/Navbar";
 import ItemListContainer from "./ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
@@ -22,10 +23,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<ItemListContainer />} />
               <Route path="/item/:id" element={<ItemDetailContainer />} />
-              <Route
-                path="/category/:category"
-                element={<ItemListContainer />}
-              />
+              <Route path="/category/:category" element={<ItemListContainer />}/>
               <Route path="/cart" element={<Cart />} />
             </Routes>
           </CartContextProvider>

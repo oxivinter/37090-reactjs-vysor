@@ -23,12 +23,23 @@ body {
   overflow-x: hidden;
 }
 
+h1,h2,h3,h4,h5 {
+  margin-bottom: 0.3em;
+}
+
 .router {
   max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 70px auto;
+}
+
+.cardGallery {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cardContainer {
@@ -50,6 +61,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #ccc;
 }
+
 .cardImg {
   box-sizing: content-box;
   max-width: 200px;
@@ -94,6 +106,36 @@ body {
   color: #fff;
 }
 
+.checkoutContainer {
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  padding: 10px 10px;
+  margin: 10px 15%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.checkoutBody {
+  height: 6em;
+  min-width: 33%;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.f21a {
+  flex: 2 1 auto;
+}
+
+.widget-itemQty {
+  position: relative;
+  top: 15px;
+  right: -30px;
+  font-size: 0.8em;
+}
+
 /* Light Mode */
 
 .cardContainer-light {
@@ -105,6 +147,7 @@ body {
   padding: 10px 10px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.5);
+  color: #222;
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -161,4 +204,23 @@ body {
 .themeBtn-light:a {
   text-decoration-line: none;
   color: #333;
+}
+
+.checkoutContainer-light {
+  display: flex;
+  flex-direction: row;
+  width: 66%;
+  padding: 10px 10px;
+  margin: 10px 15%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.checkoutBody-light {
+  height: 6em;
+  min-width: 33%;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
 }
