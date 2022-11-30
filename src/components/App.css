@@ -76,9 +76,10 @@ h1,h2,h3,h4,h5 {
   width: 100%;
   border: none;
   padding: 0.5em 1.5em;
-  color: #fff;
   margin-top: 0.5em;
   margin-bottom: 0em;
+  text-decoration-line: none;
+  color: #fff;
 }
 
 .cardBtn:hover {
@@ -87,6 +88,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .cardBtn a {
+  padding: 0.5em 3.3em;
   text-decoration-line: none;
   color: #fff;
 }
@@ -177,6 +179,7 @@ h1,h2,h3,h4,h5 {
 }
 
 .cardBtn-light a {
+  padding: 0.5em 3.3em;
   text-decoration-line: none;
   color: #333;
 }

@@ -7,7 +7,7 @@ const {lightMode} = useContext(LightModeContext)
   
   return (
     <div className={lightMode ? "cardContainer-light" : "cardContainer"}>
-      <img src={`/img/${prod.img}`} className="cardImg" alt="..." />
+      <img src={prod.img} className="cardImg" alt="..." />
       <div className={lightMode ? "cardBody-light" : "cardBody"}>
         <p><strong>{prod.nombre}</strong></p>
         <p><strong>Marca:</strong> {prod.marca}</p>

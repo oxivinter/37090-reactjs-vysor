@@ -9,14 +9,12 @@ const ItemDetail = ({ producto }) => {
   const { addItem } = useContext(CartContext);
 
   const onAdd = (contador) => {
-    addItem(producto, contador)
+    addItem(producto, contador);
   };
 
-
   return (
-
     <div className={lightMode ? "cardContainer-light" : "cardContainer"}>
-      <img src={`/img/${producto.img}`} className="cardImg" alt="..." />
+      <img src={producto.img} className="cardImg" alt="..." />
       <div className={lightMode ? "cardBody-light" : "cardBody"}>
         <p>
           <strong>{producto.nombre}</strong>
@@ -34,7 +32,9 @@ const ItemDetail = ({ producto }) => {
           <strong>Stock:</strong> {producto.stock} unidades.
         </p>
         <ItemCount stock={producto.stock} onAdd={onAdd} />
-        <button className={lightMode ? "cardBtn-light" : "cardBtn"}><Link to="/cart">Ir al carrito</Link></button>
+        <button className={lightMode ? "cardBtn-light" : "cardBtn"}>
+          <Link to="/cart">Ir al carrito</Link>
+        </button>
       </div>
     </div>
   );

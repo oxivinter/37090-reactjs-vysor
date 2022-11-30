@@ -29,7 +29,7 @@ const Cart = () => {
           <div className="cardGallery">
             {cart.map((prod, indice) => (
               <div className={lightMode ? "cardContainer-light" : "cardContainer"} key={indice}>
-                <img src={`../img/${prod.img}`} className="cardImg" alt="..." />
+                <img src={prod.img} className="cardImg" alt="..." />
                 <div className={lightMode ? "cardBody-light" : "cardBody"}>
                   <p>
                     {prod.nombre} {prod.marca} {prod.modelo}

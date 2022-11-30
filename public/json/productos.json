@@ -7,7 +7,7 @@
     "modelo": "EG01",
     "precio": 7690,
     "stock": 30,
-    "img": "eye-mod1.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/eye-mod1.jpg?alt=media&token=ac2369ea-b5d7-4be0-9410-359fdb8f9bfd"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "modelo": "EG02",
     "precio": 7690,
     "stock": 20,
-    "img": "eye-mod2.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/eye-mod2.jpg?alt=media&token=b518cd17-a943-4314-8442-fb0c2be95b8d"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "modelo": "EG03",
     "precio": 7690,
     "stock": 15,
-    "img": "eye-mod3.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/eye-mod3.jpg?alt=media&token=24f60bf2-02d6-41f0-998b-443301c3a736"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "modelo": "EG04",
     "precio": 7690,
     "stock": 30,
-    "img": "eye-mod4.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/eye-mod4.jpg?alt=media&token=2c67e9d0-f679-4578-a904-e23e2fc66b04"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "modelo": "EG05",
     "precio": 7690,
     "stock": 7,
-    "img": "eye-mod5.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/eye-mod5.jpg?alt=media&token=40d2f547-4f8f-4b83-979c-d3cd10aa3460"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "modelo": "SG01",
     "precio": 7690,
     "stock": 20,
-    "img": "sun-mod1.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/sun-mod1.jpg?alt=media&token=93c88e30-f6b9-4213-85df-ee72f974c49b"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "modelo": "SG02",
     "precio": 7690,
     "stock": 10,
-    "img": "sun-mod2.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/sun-mod2.jpg?alt=media&token=d992e9f7-ac26-44db-ac3c-852e207e0726"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "modelo": "SG03",
     "precio": 7690,
     "stock": 30,
-    "img": "sun-mod3.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/sun-mod3.jpg?alt=media&token=dfb51684-5396-426d-bec5-f909515750a8"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "modelo": "SG04",
     "precio": 7690,
     "stock": 21,
-    "img": "sun-mod4.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/sun-mod4.jpg?alt=media&token=7f1856d8-11cd-4941-a7da-639837c2587e"
   },
   {
     "id": 10,
@@ -97,6 +97,6 @@
     "modelo": "SG05",
     "precio": 7690,
     "stock": 25,
-    "img": "sun-mod5.jpg"
+    "img": "https://firebasestorage.googleapis.com/v0/b/reactjs-vysor.appspot.com/o/sun-mod5.jpg?alt=media&token=fc385db5-0886-4610-a6c2-996b4d9a1a17"
   }
 ]
