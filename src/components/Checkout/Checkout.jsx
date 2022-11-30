@@ -82,9 +82,9 @@ const Checkout = () => {
           </div>
         ))}
       </div>
-      <div className="checkoutContainer">
+      <div>
         <form
-          className="checkoutBody formStructure"
+          className={lightMode ? "checkoutContainer-light" : "checkoutContainer"}
           onSubmit={consultarFormulario}
           ref={datosFormulario}
         >

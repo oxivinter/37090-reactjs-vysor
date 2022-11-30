@@ -54,14 +54,14 @@ const Cart = () => {
               </div>
             ))}
           </div>
-          <div className={lightMode ? "checkoutContainer-light" : "checkoutContainer"}>
-            <div className={lightMode ? "checkoutBody-light f21a" : "checkoutBody f21a"}>
+          <div className={lightMode ? "itemCartContainer-light" : "itemCartContainer"}>
+            <div className={lightMode ? "itemCartBody-light f21a" : "itemCartBody f21a"}>
               <h2>En resumen...</h2>
               <p>
                 <strong>Total:</strong> ${totalPrice()}
               </p>
             </div>
-            <div className={lightMode ? "checkoutBody-light" : "checkoutBody"}>
+            <div className={lightMode ? "itemCartBody-light" : "itemCartBody"}>
               <button className={lightMode ? "cardBtn-light" : "cardBtn"} onClick={emptyCart}>
                 Limpiar Carrito
               </button>

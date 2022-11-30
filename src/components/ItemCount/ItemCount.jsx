@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import "./ItemCount.css";
 import { LightModeContext } from "../../context/lightMode";
+import { toast } from "react-toastify";
 
 const ItemCount = ({ stock, onAdd }) => {
   const [contador, setContador] = useState(1);
@@ -10,7 +11,7 @@ const ItemCount = ({ stock, onAdd }) => {
 
   const agregarAlCarrito = () => {
     onAdd(contador)
-    alert("Producto agregado!")
+    toast.success(`Se ha agregado el producto al carrito`);
   };
 
   const { lightMode } = useContext(LightModeContext);

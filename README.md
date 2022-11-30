@@ -20,5 +20,5 @@ Proyecto realizado en el contexto del curso de React.js de CoderHouse, en el que
 
 ## Screenshots
 
-![Listado de productos (dark mode)](TBA)
-![Carrito de compra (light mode)](TBA)
+![Listado de productos (dark mode)](https://raw.githubusercontent.com/oxivinter/37090-reactjs-vysor/main/docs/snapshot001.jpg)
+![Carrito de compra (light mode)](https://raw.githubusercontent.com/oxivinter/37090-reactjs-vysor/main/docs/snapshot002.jpg)
