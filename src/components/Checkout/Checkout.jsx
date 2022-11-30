@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import {
@@ -92,25 +91,21 @@ const Checkout = () => {
           <h1 className="checkout-box">Checkout</h1>
           <div className="checkout-box">
             <label htmlFor="nombre" className="checkout-label">
-              Nombre y Apellido
+              Nombre
             </label>
             <input type="text" className="checkout-control" name="nombre" />
+          </div>
+          <div className="checkout-box">
+            <label htmlFor="apellido" className="checkout-label">
+              Apellido
+            </label>
+            <input type="text" className="checkout-control" name="apellido" />
           </div>
           <div className="checkout-box">
             <label htmlFor="email" className="checkout-label">
               Email
             </label>
             <input type="email" className="checkout-control" name="email" />
-          </div>
-          <div className="checkout-box">
-            <label htmlFor="email-conf" className="checkout-label">
-              Email (confirmación)
-            </label>
-            <input
-              type="email"
-              className="checkout-control"
-              name="email-conf"
-            />
           </div>
           <div className="checkout-box">
             <label htmlFor="dni" className="checkout-label">

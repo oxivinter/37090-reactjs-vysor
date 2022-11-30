@@ -48,7 +48,12 @@ const getProductos = async () => {
 
 const getProducto = async (id) => {
   const prod = await getDoc(doc(db, "productos", id));
-  const item = { ...prod.data(), id: prod.id };
+  let item;
+  if (prod.data()) {
+    item = { ...prod.data(), id: prod.id };
+  } else {
+    item = "Producto no encontrado";
+  }
   return item;
 };
 
@@ -82,6 +87,7 @@ const createOrdenCompra = async (cliente, preTotal, fecha) => {
     email: cliente.email,
     dni: cliente.dni,
     direccion: cliente.direccion,
+    fecha: fecha,
     precioTotal: preTotal,
   });
 
@@ -102,5 +108,5 @@ export {
   updateProducto,
   deleteProducto,
   createOrdenCompra,
-  getOrdenCompra
+  getOrdenCompra,
 };
