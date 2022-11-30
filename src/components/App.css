@@ -110,8 +110,8 @@ h1,h2,h3,h4,h5 {
 
 .checkoutContainer {
   display: flex;
-  flex-direction: row;
-  width: 66%;
+  flex-direction: column;
+  width: 100%;
   padding: 10px 10px;
   margin: 10px 15%;
   background-color: rgba(0, 0, 0, 0.7);

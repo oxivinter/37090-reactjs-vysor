@@ -10,7 +10,11 @@ const CartWidget = () => {
 
   return (
     <>
-    <p className="widget-itemQty">{getItemQuantity()}</p>
+    {getItemQuantity() > 0 &&
+      <p className="widget-itemQty">
+        {getItemQuantity()}
+      </p>
+    }
       <Link to="/cart">
         <img className={lightMode ? "" : "invert"} src="./svg/iconocarrito.svg" alt="" />
       </Link>

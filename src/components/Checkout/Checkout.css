@@ -1,23 +1,26 @@
 .formStructure {
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   max-width: 1200px;
   height: auto;
 }
 
-.mb-3 {
-  margin-bottom: 3px;
+.checkout-box {
+  margin: 3px auto;
+  width: 80%;
 }
 
 .checkout-label {
   width: 100%;
-  margin-bottom: 3px;
+  margin: 3px auto;
   min-width: 0;
 }
 
 .checkout-control {
   width: 100%;
+  margin: 3px auto;
   font-size: 1em;
-  padding:0.3em;
-  margin-bottom: 3px;
+  padding: 0.3em;
   min-width: 0;
 }
