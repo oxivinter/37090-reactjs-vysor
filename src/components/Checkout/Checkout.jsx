@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import {
@@ -13,15 +13,20 @@ import { LightModeContext } from "../../context/lightMode";
 import "./Checkout.css";
 
 const Checkout = () => {
-  const { cart, emptyCart, totalPrice, getItemQuantity } =
-    useContext(CartContext);
+  const { cart, emptyCart, totalPrice, getItemQuantity } = useContext(CartContext);
   const { lightMode, toggleLightMode } = useContext(LightModeContext);
+  const [email, setEmail] = useState("");
+  const [email2, setEmail2] = useState("");
 
   const datosFormulario = React.useRef();
   let navigate = useNavigate();
 
   const consultarFormulario = (e) => {
     e.preventDefault();
+    if (email !== email2) {
+      toast.error("La dirección de mail y la confirmación no coinciden");
+      return;
+    }
     const datForm = new FormData(datosFormulario.current);
     const valores = Object.fromEntries(datForm);
     const aux = [...cart];
@@ -84,7 +89,9 @@ const Checkout = () => {
       </div>
       <div>
         <form
-          className={lightMode ? "checkoutContainer-light" : "checkoutContainer"}
+          className={
+            lightMode ? "checkoutContainer-light" : "checkoutContainer"
+          }
           onSubmit={consultarFormulario}
           ref={datosFormulario}
         >
@@ -105,7 +112,25 @@ const Checkout = () => {
             <label htmlFor="email" className="checkout-label">
               Email
             </label>
-            <input type="email" className="checkout-control" name="email" />
+            <input
+              type="email"
+              className="checkout-control"
+              name="email"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+            />
+          </div>
+          <div className="checkout-box">
+            <label htmlFor="email" className="checkout-label">
+              Confirmar Email
+            </label>
+            <input
+              type="email"
+              className="checkout-control"
+              name="confirmar-email"
+              value={email2}
+              onChange={(event) => setEmail2(event.target.value)}
+            />
           </div>
           <div className="checkout-box">
             <label htmlFor="dni" className="checkout-label">
