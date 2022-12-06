@@ -28,13 +28,13 @@ const Navbar = () => {
       <nav>
         <ul className={`burger-menu ${isNavActive ? "burger-menu-active" : ""} ${lightMode ? "nav-light" : ""}`}>
           <li className={lightMode ? "nav-texto nav-texto-light" : "nav-texto"}>
-            <Link to="/category/LehzIrxaEnmgd4selwhm">Eyeglasses</Link>
+            <Link to="/category/1">Eyeglasses</Link>
           </li>
           <li className={lightMode ? "nav-texto nav-texto-light" : "nav-texto"}>
-          <Link to="/category/XHytvBL0MV4Bpw5qLCmW">Sunglasses</Link>
+          <Link to="/category/2">Sunglasses</Link>
           </li>
           <li className={lightMode ? "nav-texto nav-texto-light" : "nav-texto"}>
-          <Link to="/category/ppfPC62j2q0plLLLpztF">Contacts</Link>
+          <Link to="/category/3">Contacts</Link>
           </li>
           <li className="nav-carrito">
             <CartWidget />
