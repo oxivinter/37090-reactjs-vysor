@@ -26,11 +26,11 @@ const Cart = () => {
         </div>
       ) : (
         <>
-          <div className="cardGallery">
+          <div className="cartItemCardGallery">
             {cart.map((prod, indice) => (
-              <div className={lightMode ? "cardContainer-light" : "cardContainer"} key={indice}>
-                <img src={prod.img} className="cardImg" alt="..." />
-                <div className={lightMode ? "cardBody-light" : "cardBody"}>
+              <div className={lightMode ? "cartItemCardContainer-light" : "cartItemCardContainer"} key={indice}>
+                <img src={prod.img} className="cartItemCardImg" alt="..." />
+                <div className={lightMode ? "cartItemCardBody-light" : "cartItemCardBody"}>
                   <p>
                     {prod.nombre} {prod.marca} {prod.modelo}
                   </p>
@@ -54,14 +54,14 @@ const Cart = () => {
               </div>
             ))}
           </div>
-          <div className={lightMode ? "itemCartContainer-light" : "itemCartContainer"}>
-            <div className={lightMode ? "itemCartBody-light f21a" : "itemCartBody f21a"}>
+          <div className={lightMode ? "endCartContainer-light" : "endCartContainer"}>
+            <div className={lightMode ? "endCartBody-light f21a" : "endCartBody f21a"}>
               <h2>En resumen...</h2>
               <p>
                 <strong>Total:</strong> ${totalPrice()}
               </p>
             </div>
-            <div className={lightMode ? "itemCartBody-light" : "itemCartBody"}>
+            <div className={lightMode ? "endCartBody-light" : "endCartBody"}>
               <button className={lightMode ? "cardBtn-light" : "cardBtn"} onClick={emptyCart}>
                 Limpiar Carrito
               </button>

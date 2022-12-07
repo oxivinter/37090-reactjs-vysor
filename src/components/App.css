@@ -93,6 +93,72 @@ h1,h2,h3,h4,h5 {
   color: #fff;
 }
 
+.detailCardContainer {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.detailCardDivider {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailCardBody {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.detailCardImg {
+  box-sizing: content-box;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 10px;
+}
+
+.cartItemCardGallery {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cartItemCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cartItemCardBody {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+.cartItemCardImg {
+  box-sizing: content-box;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 10px;
+}
+
 .themeBtn {
   position: fixed;
   top: 70px;
@@ -108,9 +174,9 @@ h1,h2,h3,h4,h5 {
   color: #fff;
 }
 
-.itemCartContainer {
+.endCartContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: center;
   width: 100%;
   padding: 10px 10px;
   margin: 10px 15%;
@@ -118,7 +184,7 @@ h1,h2,h3,h4,h5 {
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.itemCartBody {
+.endCartBody {
   height: 6em;
   min-width: 33%;
   padding: 5px 10px;
@@ -230,7 +296,7 @@ h1,h2,h3,h4,h5 {
   color: #333;
 }
 
-.itemCartContainer-light {
+.endCartContainer-light {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -240,7 +306,7 @@ h1,h2,h3,h4,h5 {
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.itemCartBody-light {
+.endCartBody-light {
   height: 6em;
   min-width: 33%;
   padding: 5px 10px;

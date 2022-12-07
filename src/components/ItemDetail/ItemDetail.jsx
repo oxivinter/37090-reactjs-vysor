@@ -13,28 +13,35 @@ const ItemDetail = ({ producto }) => {
   };
 
   return (
-    <div className={lightMode ? "cardContainer-light" : "cardContainer"}>
-      <img src={producto.img} className="cardImg" alt="..." />
-      <div className={lightMode ? "cardBody-light" : "cardBody"}>
-        <p>
-          <strong>{producto.nombre}</strong>
-        </p>
-        <p>
-          <strong>Marca:</strong> {producto.marca}.
-        </p>
-        <p>
-          <strong>Modelo:</strong> {producto.modelo}.
-        </p>
-        <p>
-          <strong>Precio:</strong> ${producto.precio}.
-        </p>
-        <p>
-          <strong>Stock:</strong> {producto.stock} unidades.
-        </p>
-        <ItemCount stock={producto.stock} onAdd={onAdd} />
-        <button className={lightMode ? "cardBtn-light" : "cardBtn"}>
-          <Link to="/cart">Ir al carrito</Link>
-        </button>
+    <div
+      className={lightMode ? "detailCardContainer-light" : "detailCardContainer"}
+    >
+      <img src={producto.img} className="detailCardImg" alt="..." />
+      <div className="detailCardDivider">
+        <div className={lightMode ? "detailCardBody-light" : "detailCardBody"}>
+          <p>
+            <strong>{producto.nombre}</strong>
+          </p>
+          <br />
+          <p>
+            <strong>Marca:</strong> {producto.marca}.
+          </p>
+          <p>
+            <strong>Modelo:</strong> {producto.modelo}.
+          </p>
+          <p>
+            <strong>Precio:</strong> ${producto.precio}.
+          </p>
+          <p>
+            <strong>Stock:</strong> {producto.stock} unidades.
+          </p>
+        </div>
+        <div className="detailCardBody">
+          <ItemCount stock={producto.stock} onAdd={onAdd} />
+          <button className={lightMode ? "cardBtn-light" : "cardBtn"}>
+            <Link to="/cart">Ir al carrito</Link>
+          </button>
+        </div>
       </div>
     </div>
   );
