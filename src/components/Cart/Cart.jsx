@@ -32,7 +32,7 @@ const Cart = () => {
                 <img src={prod.img} className="cartItemCardImg" alt="..." />
                 <div className={lightMode ? "cartItemCardBody-light" : "cartItemCardBody"}>
                   <p>
-                    {prod.nombre} {prod.marca} {prod.modelo}
+                    <strong>{prod.nombre} {prod.marca} {prod.modelo}</strong>
                   </p>
                   <p>
                     <strong>Cantidad:</strong> {prod.cant}
